@@ -1,4 +1,4 @@
-int heights;
+int trianglesize;
 public void setup()
 {
   size(800, 800);
@@ -7,12 +7,12 @@ public void setup()
 public void draw()
 {
   background(0);
-  sierpinski(0, 800, heights);
+  sierpinski(0, 800, trianglesize);
 }
 
 public void mouseDragged(){
   if(mousePressed==true){
-  heights=mouseX;
+  trianglesize=mouseX;
   }
 }
 
